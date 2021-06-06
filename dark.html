@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/446bd857cc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/dark.css">
+  <title>Dark</title>
+</head>
+
+<body>
+    <header>
+        <a href="#main-menu"
+          id="main-menu-toggle"
+          class="menu-toggle"
+          aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        <a href="light.html" 
+          id="light-toggle"
+          class="light-toggle"
+          aria-label="light toggle">
+          <span class="sr-only">Light mode </span>
+          <img src="Images/light-theme-icon.svg" alt="Light theme">
+        </a>
+        <h1 class="logo"><span class="" >i</span>RESOLVE</h1>
+        
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+          <a href="#main-menu-toggle"
+            id="main-menu-close"
+            class="menu-close"
+            aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+          </a>
+          <ul>
+            <li><a href="#"><strong>Products</strong> </a></li>
+           <li><a href="#"><strong>About</strong> </a></li>
+           <li><a href="#"><strong>Contact</strong> </a></li>
+          </ul>
+        </nav>
+        <a href="#main-menu-toggle"
+          class="backdrop"
+          tabindex="-1"
+          aria-hidden="true" hidden></a>
+    </header>
+    
+    <main class="form">
+      <p><strong> HELLO LANRE! </strong>  </p>
+      <h2><strong> REPORT A PROBLEM </strong>  </h2>
+      <img src="Images/lady-profile-pic.png" alt="jack profile pic">
+      <form action="" class="report">
+        <p><strong>Urgency </strong>  </p>
+        <input type="radio" class="radio "  name="Urgency" id="trivial" value="Trivial">
+        <label for="trivial"><strong> Trivial </strong> </label>
+        <input type="radio"  class="radio " name="Urgency" id="important" value="Important">
+        <label for="important"><strong> Important </strong>  </label>
+        <p><strong> Tag </strong> </p>
+        <input type="radio"  class="radio report" name="tag" id="hr" value="HR">
+        <label for="hr"> <strong> HR </strong> </label>
+        <input type="radio"  class="radio report" name="tag" id="it" value="it">
+        <label for="it"> <strong> IT </strong>  </label>
+        <input type="radio"  class="radio report" name="tag" id="accounting" value="Accounting">
+        <label for="accounting">  <strong> Accounting </strong> </label>
+        <br> 
+        <button type="submit"> <strong> Report </strong>  </button>
+        <p> <a href="report.html"> Registration page </a> </p> 
+      </form>
+    </main>
+  
+</body>
+
+
+</html>
